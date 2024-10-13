@@ -70,32 +70,31 @@ function validateForm() {
     }
   
     return isValid;
-  }
+}
   
-  // Show success message
-  function showSuccessMessage() {
-    const form = document.getElementById('registration-form');
+// Show success message
+function showSuccessMessage() {
     form.innerHTML = `
       <h2>Thank You!</h2>
       <p>Your form has been submitted successfully. <span style="color: green;">✓</span></p>
     `;
-  }
+}
   
-  // Attach validateForm to the form submission
-  document.getElementById('registration-form').onsubmit = function(event) {
+// Attach validateForm to the form submission
+document.getElementById('registration-form').onsubmit = function(event) {
     event.preventDefault(); // Prevent default form submission
     if (validateForm()) {
       // Additional form processing can be done here if needed
     }
-  };
+};
   
-  function toggleOtherPositionInput() {
+function toggleOtherPositionInput() {
     const position = document.getElementById('position').value;
     const wrapper = document.getElementById('other-position-wrapper');
     const otherInput = document.getElementById('other-position');
     
     if (position === 'Other') {
-      wrapper.style.display = 'block'; // Show the wrapper
+      wrapper.style.display = 'block'; 
       wrapper.classList.remove('hidden');
       wrapper.classList.add('visible');
       otherInput.disabled = false;
@@ -103,14 +102,14 @@ function validateForm() {
       wrapper.classList.remove('visible');
       wrapper.classList.add('hidden');
       setTimeout(() => {
-        wrapper.style.display = 'none'; // Hide the wrapper after transition
+        wrapper.style.display = 'none'; 
         otherInput.disabled = true;
-        otherInput.value = ''; // Clear the input
-      }, 400); // Sync with CSS transition duration
+        otherInput.value = ''; 
+      }, 400);
     }
-  }
+}
   
-  function toggleOtherDepartmentInput() {
+function toggleOtherDepartmentInput() {
     const department = document.getElementById('department').value;
     const wrapper = document.getElementById('other-department-wrapper');
     const otherInput = document.getElementById('other-department');
@@ -129,5 +128,5 @@ function validateForm() {
         otherInput.value = '';
       }, 400);
     }
-  }
+}
   
