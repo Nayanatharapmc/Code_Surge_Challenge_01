@@ -1,171 +1,183 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-  
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-}
-  
-h1 {
-    margin: 0;
-  }
-  
-nav {
-   background-color: #333;
-   overflow: hidden;
-}
-  
-nav a {
-   float: left;
-   display: block;
-   color: white;
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+   color: #333;
+ }
+ 
+ header {
+   background-color: #173b34;
+   color: #fff;
+   padding: 20px 0;
    text-align: center;
-   padding: 1rem;
+ }
+ 
+ nav {
+   margin: 10px 0;
+   text-align: center;
+ }
+ 
+ nav a {
+   margin: 0 15px;
+   color: #333;
    text-decoration: none;
-}
-  
-nav a:hover {
+   font-weight: bold;
+ }
+ 
+ section {
+   margin: 20px;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ h1 {
+   margin: 0;
+ }
+ 
+ nav a:hover {
    background-color: #575757;
-}
-  
-#main-content {
+ }
+ 
+ #main-content {
    background-color: white;
    margin: 2rem auto;
    padding: 2rem;
    max-width: 600px;
    border-radius: 10px;
    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-   margin-bottom: 2rem; 
-}
-  
-h2 {
+   margin-bottom: 2rem;
+ }
+ 
+ h2 {
    color: #333;
-}
-  
-p {
+ }
+ 
+ p {
    color: #555;
-}
-  
-label {
-  display: block;
-  margin: 0.5rem 0;
-  color: #333;
-  font-weight: bold;
-}
-  
-input, select, button {
-   width: 90%;
+ }
+ 
+ label {
+   display: block;
+   margin: 0.5rem 0;
+   color: #333;
+   font-weight: bold;
+ }
+ 
+ input[type="text"],
+ input[type="tel"],
+ input[type="email"],
+ input[type="date"],
+ select,
+ button {
+   width: 90%; /* Set the same width for all inputs */
    padding: 0.8rem;
    margin-bottom: 1.5rem;
    border: 1px solid #ccc;
    border-radius: 5px;
    font-size: 1rem;
-}
-  
-input:focus, select:focus {
+   box-sizing: border-box; /* Prevents width issues with padding */
+ }
+ 
+ input:focus,
+ select:focus {
    outline: none;
-   border-color: #4CAF50;
-}
-  
-button {
-   background-color: #4CAF50;
-   color: white;
+   border-color: #4caf50;
+ }
+ 
+ /* Button styles */
+ button[type="submit"],
+ button[type="reset"] {
+   padding: 10px 20px;
+   margin: 10px 0;
    border: none;
+   border-radius: 5px;
+   background-color: #4caf50;
+   color: white;
+   font-size: 16px;
    cursor: pointer;
-   transition: background-color 0.3s;
-   text-align: center;
-}
-  
-button:hover {
-   background-color: #45a049;
-}
-  
-.error-message {
+ }
+ 
+ button[type="reset"] {
+   background-color: #dc3545;
+ }
+ 
+ button:hover {
+   opacity: 0.8;
+ }
+ 
+ .error-message {
    color: red;
    font-size: 0.9rem;
    margin-bottom: 1rem;
    display: none;
-}
-
-/* Success Message Styling */
-h2 {
-  color: #4CAF50;
+ }
+ 
+ /* Success Message Styling */
+ h2 {
+   color: #4caf50;
    margin-top: 1.5rem;
-}
-  
-p {
+ }
+ 
+ p {
    color: #333;
    font-size: 1.2rem;
-}
-  
-footer {
+ }
+ 
+ footer {
    text-align: center;
-   padding: 1rem 0;
+   padding: 10px;
    background-color: #333;
-   color: white;
-   position: relative; /* Change from fixed to relative */
+   color: #fff;
+   position: relative;
+   bottom: 0;
    width: 100%;
-}
-  
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav a {
-      float: none;
-      width: 100%;
-    }
-  
-    #main-content {
-      margin: 1rem;
-      padding: 1.5rem;
-    }
-  
-    input, select, button {
-      font-size: 0.9rem;
-      padding: 0.7rem;
-    }
-}
-  
-/* Smooth transition effect */
-.hidden {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-}
-  
-.visible {
-   max-height: 100px; /* Adjust as needed */
-}
-  
-/* Form styling for consistency */
-input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-  
-/* Add some space between the form fields */
-div {
-  margin-bottom: 20px;
-}
-  
-/* Adding subtle background */
-#other-department-wrapper,
-#other-position-wrapper {
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   nav a {
+     float: none;
+     width: 100%;
+   }
+ 
+   #main-content {
+     margin: 1rem;
+     padding: 1.5rem;
+   }
+ 
+   input,
+   select,
+   button {
+     font-size: 0.9rem;
+     padding: 0.7rem;
+   }
+ }
+ 
+ /* Smooth transition effect */
+ .hidden {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.4s ease-in-out;
+ }
+ 
+ .visible {
+   max-height: 100px;
+ }
+ 
+ /* Add some space between the form fields */
+ div {
+   margin-bottom: 20px;
+ }
+ 
+ #other-department-wrapper,
+ #other-position-wrapper {
    background-color: #f9f9f9;
    padding: 10px;
    border-radius: 4px;
    margin-top: 10px;
    display: none; /* Hide by default */
-}
-  
-   
+ }
+ 
