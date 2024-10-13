@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+  
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+  
+h1 {
+    margin: 0;
+  }
+  
+nav {
+   background-color: #333;
+   overflow: hidden;
+}
+  
+nav a {
+   float: left;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 1rem;
+   text-decoration: none;
+}
+  
+nav a:hover {
+   background-color: #575757;
+}
+  
+#main-content {
+   background-color: white;
+   margin: 2rem auto;
+   padding: 2rem;
+   max-width: 600px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+   margin-bottom: 2rem; 
+}
+  
+h2 {
+   color: #333;
+}
+  
+p {
+   color: #555;
+}
+  
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #333;
+  font-weight: bold;
+}
+  
+input, select, button {
+   width: 90%;
+   padding: 0.8rem;
+   margin-bottom: 1.5rem;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+}
+  
+input:focus, select:focus {
+   outline: none;
+   border-color: #4CAF50;
+}
+  
+button {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   text-align: center;
+}
+  
+button:hover {
+   background-color: #45a049;
+}
+  
+.error-message {
+   color: red;
+   font-size: 0.9rem;
+   margin-bottom: 1rem;
+   display: none;
+}
+
+/* Success Message Styling */
+h2 {
+  color: #4CAF50;
+   margin-top: 1.5rem;
+}
+  
+p {
+   color: #333;
+   font-size: 1.2rem;
+}
+  
+footer {
+   text-align: center;
+   padding: 1rem 0;
+   background-color: #333;
+   color: white;
+   position: relative; /* Change from fixed to relative */
+   width: 100%;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  
+    #main-content {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  
+    input, select, button {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+}
+  
+/* Smooth transition effect */
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+  
+.visible {
+   max-height: 100px; /* Adjust as needed */
+}
+  
+/* Form styling for consistency */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+/* Add some space between the form fields */
+div {
+  margin-bottom: 20px;
+}
+  
+/* Adding subtle background */
+#other-department-wrapper,
+#other-position-wrapper {
+   background-color: #f9f9f9;
+   padding: 10px;
+   border-radius: 4px;
+   margin-top: 10px;
+   display: none; /* Hide by default */
+}
+  
+   
