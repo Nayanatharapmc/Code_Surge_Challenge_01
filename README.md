@@ -1,4 +1,4 @@
-This is a Monthly Coding Competition organized by Pagero and this the first challenge for the month October 2024.
+Code Surge is a Monthly Coding Competition organized by Pagero and this the first challenge for the month October 2024.
 <ul>
   <li>
     Challenge description : https://drive.google.com/file/d/1aToCeOz0aKnzls6quc6B5rc0-uUhbqvf/view?usp=sharing
